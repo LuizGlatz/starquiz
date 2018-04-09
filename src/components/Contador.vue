@@ -10,7 +10,7 @@
   export default {
     data () {
       return {
-        timer: 30,
+        timer: 120,
         danger: 10,
         warning: 60,
         interval: null
