@@ -140,8 +140,6 @@
   #app {
     font-family: arial, sans-serif;
     background: $black;
-    min-height: 100vh;
-    overflow: hidden;
     font-size: 16px;
     max-width: 100%;
     color: $white;

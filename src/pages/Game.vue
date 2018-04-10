@@ -149,7 +149,7 @@
 <style lang="scss" scoped>
   main {
     padding: 10px 20px 0 20px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -234,6 +234,23 @@
 
           &.disabled {
             color: lighten($blue, 10);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    main {
+      .inline {
+        .game {
+          #Logo {
+            height: 70px;
+            width: auto;
+          }
+
+          h1 {
+            font-size: 38px;
           }
         }
       }

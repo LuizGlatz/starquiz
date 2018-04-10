@@ -172,4 +172,10 @@
       }
     }
   }
+
+  @media (max-width) {
+    .frame {
+      max-width: 80%;
+    }
+  }
 </style>
