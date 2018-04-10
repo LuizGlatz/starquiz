@@ -12,7 +12,7 @@
       </Botao>
     </div>
 
-    <form @submit.prevent="addAnswer">
+    <form @submit.prevent="">
       <input type="text" v-model="answer" @change="addAnswer">
     </form>
 
@@ -97,6 +97,8 @@
       addAnswer () {
         const newChar = this.char
         newChar.answer = this.answer
+
+        console.log(newChar.answer)
 
         this.$store.commit('editCharacter', newChar)
         this.$el.querySelector('form').classList.remove('show')
