@@ -12,7 +12,7 @@
       </Botao>
     </div>
 
-    <form>
+    <form @submit.prevent="addAnswer">
       <input type="text" v-model="answer" @change="addAnswer">
     </form>
 
